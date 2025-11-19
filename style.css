@@ -1,0 +1,139 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f172a; /* azul oscuro elegante */
+  color: #e2e8f0; /* gris clarito */
+  line-height: 1.7;
+  padding-bottom: 3rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2.8rem 1rem;
+  background: linear-gradient(135deg, #10b981, #06b6d4, #3b82f6);
+  color: #fff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  animation: fadeIn 1s ease;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Contenido */
+main {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
+}
+
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  color: #22d3ee; /* celeste vigoroso */
+  margin-bottom: 1rem;
+  border-left: 6px solid #3b82f6;
+  padding-left: 12px;
+  font-weight: 600;
+  text-shadow: 0 0 6px rgba(34,211,238,0.5);
+}
+
+/* Texto */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.4rem;
+  color: #cbd5e1;
+}
+
+/* Ingredientes */
+.ingredientes ul {
+  margin-left: 1.5rem;
+}
+
+.ingredientes li {
+  background: rgba(16, 185, 129, 0.15);
+  padding: 10px 14px;
+  border-left: 6px solid #10b981;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: #d1fae5;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.ingredientes li:hover {
+  transform: translateX(10px);
+  background: rgba(16, 185, 129, 0.35);
+}
+
+/* Preparación */
+.preparacion ol {
+  margin-left: 1.5rem;
+}
+
+.preparacion li {
+  background: rgba(59,130,246,0.1);
+  padding: 12px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-left: 6px solid #3b82f6;
+  color: #dbeafe;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.preparacion li:hover {
+  transform: scale(1.03);
+  background: rgba(59,130,246,0.25);
+}
+
+/* Imagen */
+.imagen {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.imagen img {
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.imagen img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.8);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
